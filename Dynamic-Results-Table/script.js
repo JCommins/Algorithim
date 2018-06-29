@@ -194,8 +194,6 @@ function getCookie(cname) {
     for(var i = 0; i < ca.length; i++) {
         var c = ca[i];
 
-        //alert(document.cookie);
-
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }
