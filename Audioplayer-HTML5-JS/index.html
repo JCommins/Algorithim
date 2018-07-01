@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> Audio Player </title>
+	<link rel "stylesheet" href = "css/style.css">
+</head>
+<body> 
+	<!-- starts with a container for player -> with a fixed width.
+	     Not putting content in through html only through JS and the API -->
+	<div id="container">
+		<div id= "audio-img">
+			<img class = "cover"> <!-- don't need src link, will link dynamically with JS-->
+		</div>
+		<div id= "audio-player">
+			<div id = "audio-info">
+				<span class = "artist"></span> - <span class = "title">
+			</div>
+		</div>
+		<!-- volume bar w/ html range type (slider)-->
+		<input id = "volume" type = "range" min = "0" max = "10" value = "5">
+		<br> <!-- line break then buttons--><link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+		
+		<div id= "audio-buttons">
+			<!-- will create empty buttons with id's-->
+			<button id = "prev"></button>
+			<button id = "play"></button>
+			<!-- will hide pause with CSS until a song is playing-->
+			<button id = "pause"></button>
+			<button id = "stop"></button>
+			<button id = "next"></button>
+		</div> 
+		<!-- will have some floating here, so will clear -->
+		<div class = "clearfix"></div>
+		<!-- then want the tracker -->
+		<div id = "tracker">
+			<!-- will have an image of an empty progress bar attached to this progressbar  div--> 
+			<div id ="progressbar"> 
+				<!-- progress span will be the 'filled' progrss bar-->
+				<span id = "progress"></span>
+			</div>
+			<span id = "duration"></span>
+		</div>
+		<div class = "clearfix"></div>
+		<!-- playlist ul  -->
+		<ul id = "playlist">
+			<!-- li tags representing each song -> song attributes, could have different cover for each song-->
+			<!-- more efficient to build a server side applicaation where you could upload the song or enter the song nfo in a form but this is a front end applicatin only -->
+			<li song = "Kill Krinkle Club - Shoulder Blade.wav" cover = "cover1.jpg" artist = "Kill Krinkle Club" >Shoulder Blade.wav</li>
+			<li song = "Kill Krinkle Club - Long Goodbyes.wav" cover = "cover1.jpg" artist = "Kill Krinkle Club" >Long Goodbyes.wav</li>
+			<li song = "Kill Krinkle Club - Fearless.wav" cover = "cover1.jpg" artist = "Kill Krinkle Club" >Fearless.wav</li>
+			<li song = "Kill Krinkle Club - Bullet.wav" cover = "cover1.jpg" artist = "Kill Krinkle Club" >Bullet.wav</li>
+			<li song = "Kill Krinkle Club - Oxen of the Sun.wav" cover = "cover1.jpg" artist = "Kill Krinkle Club" >Oxen of the Sun.wav</li>
+			<li song = "Kill Krinkle Club - Soften Reflex.wav" cover = "cover1.jpg" artist = "Kill Krinkle Club" >Soften Reflex.wav</li>
+			<li song = "Kill Krinkle Club - Love Long Way.wav" cover = "cover1.jpg" artist = "Kill Krinkle Club" >Love Long Way.wav</li>
+			<li song = "Kill Krinkle Club - By Choice.wav" cover = "cover1.jpg" artist = "Kill Krinkle Club" >By Choice.wav</li>
+			<li song = "Kill Krinkle Club - The Heart It Soaks.wav" cover = "cover1.jpg" artist = "Kill Krinkle Club" >The Heart It Soaks.wav</li>
+			<li song = "Kill Krinkle Club - Stahl.wav" cover = "cover1.jpg" artist = "Kill Krinkle Club" >Stahl.wav</li>
+	</div>
+	<script src="js/jquery.js"> </script>
+	<script src="js/main.js"> </script>
+</body> 
+		
+</html> 
