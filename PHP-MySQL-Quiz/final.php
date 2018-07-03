@@ -1,4 +1,4 @@
-<?php //Reference: Eduonix: https://www.youtube.com/watch?v=jwY8XlVAcfE ?>
+<?php 
 
 <?php include 'database.php'; ?>
 <?php session_start(); ?>
@@ -22,7 +22,7 @@
 				<?php 
 				$query = "SELECT * FROM `questions`";
 				$questions = $mysqli->query($query) or die($mysqli->error.__LINE__);
-			    $total = $questions->num_rows; 
+			        $total = $questions->num_rows; 
 				//$score = $_SESSION['score']; 
 				if (empty($_SESSION['score'])){
 				    $score = 0;
