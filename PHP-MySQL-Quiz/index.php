@@ -1,5 +1,3 @@
-<?php //Reference: Eduonix: https://www.youtube.com/watch?v=jwY8XlVAcfE ?>
-
 <?php
  include 'database.php';
  //Get Total Questions
