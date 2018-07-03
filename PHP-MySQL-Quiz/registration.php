@@ -1,5 +1,3 @@
-<?php //reference: http://www.allphptricks.com/ ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +8,7 @@
 </head>
 <body>
 <?php
-	require('database.php');
+    require('database.php');
     // If form submitted, insert values into the database.
     if (isset($_REQUEST['username'])){
 		$username = stripslashes($_REQUEST['username']); // removes backslashes
